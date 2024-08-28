@@ -30,25 +30,35 @@ import java.time.LocalDate;
         @Column(name="email")
         private String email;
 
-        @Column(name = "date")
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    @Column(name = "date")
         private LocalDate date;
 
         public Employee() {
 
         }
 
-        public Employee(int id, String firstName, String lastName, String email) {
+        public Employee(int id, String firstName, String lastName, String email, LocalDate date) {
             this.id = id;
             this.firstName = firstName;
             this.lastName = lastName;
             this.email = email;
+            this.date = date;
         }
 
 
-        public Employee(String firstName, String lastName, String email) {
+        public Employee(String firstName, String lastName, String email, LocalDate date) {
             this.firstName = firstName;
             this.lastName = lastName;
             this.email = email;
+            this.date = date;
         }
 
         // define getter/setter

@@ -72,6 +72,7 @@ public class EmployeeController {
         return "redirect:/employees/list";
     }
 
+
     // Handle NOT FOUND
     @GetMapping("/notFound")
     public String handleNotFound() {
