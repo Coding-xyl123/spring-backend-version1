@@ -1,0 +1,37 @@
+.fadeInUp {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .fadeInUpDelayed1 {
+    animation-delay: 0.2s;
+  }
+  
+  .fadeInUpDelayed2 {
+    animation-delay: 0.4s;
+  }
+  
+  .fadeInUpDelayed3 {
+    animation-delay: 0.6s;
+  }
+  
+  .fadeInUpDelayed4 {
+    animation-delay: 0.8s;
+  }
+  
+  .fadeInUpDelayed5 {
+    animation-delay: 1s;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
