@@ -30,6 +30,11 @@ import java.time.LocalDate;
         @Column(name="email")
         private String email;
 
+        @Column(name = "date")
+        private LocalDate date;
+
+
+
     public LocalDate getDate() {
         return date;
     }
@@ -38,8 +43,7 @@ import java.time.LocalDate;
         this.date = date;
     }
 
-    @Column(name = "date")
-        private LocalDate date;
+
 
         public Employee() {
 
