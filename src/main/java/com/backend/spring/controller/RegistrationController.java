@@ -68,7 +68,6 @@ public class RegistrationController {
         if (existing != null){
         	theModel.addAttribute("webUser", new WebUser());
 			theModel.addAttribute("registrationError", "User name already exists.");
-
 			logger.warning("User name already exists.");
         	return "register/registration-form";
         }

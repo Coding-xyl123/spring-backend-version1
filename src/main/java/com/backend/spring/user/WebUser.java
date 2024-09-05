@@ -27,6 +27,10 @@ public class WebUser {
 	@Pattern(regexp="^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$")
 	private String email;
 
+	// Optional: Add a phone number field
+	@Pattern(regexp = "^\\+?[0-9. ()-]{7,}$", message = "Invalid phone number format")
+	private String phoneNumber;
+
 	public WebUser() {
 
 	}
@@ -69,6 +73,14 @@ public class WebUser {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 
 }
